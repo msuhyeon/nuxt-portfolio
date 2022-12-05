@@ -12,16 +12,22 @@
       <div class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <NuxtLink class="nav__link">HOME</NuxtLink>
+            <NuxtLink class="nav__link" :to="{ path: '/' }">HOME</NuxtLink>
           </li>
           <li class="nav__item">
-            <NuxtLink class="nav__link">ABOUT</NuxtLink>
+            <NuxtLink class="nav__link" :to="{ path: '/about' }"
+              >ABOUT</NuxtLink
+            >
           </li>
           <li class="nav__item">
-            <NuxtLink class="nav__link">PROJECTS</NuxtLink>
+            <NuxtLink class="nav__link" :to="{ path: '/projects' }"
+              >PROJECTS</NuxtLink
+            >
           </li>
           <li class="nav__item">
-            <NuxtLink class="nav__link">CONTACT</NuxtLink>
+            <NuxtLink class="nav__link" :to="{ path: '/contact' }"
+              >CONTACT</NuxtLink
+            >
           </li>
         </ul>
       </div>
@@ -67,6 +73,7 @@ export default defineComponent({
       .nav__item {
         font-size: 2rem;
         margin-right: 2rem;
+        cursor: pointer;
 
         .nav__link {
           color: #000;
